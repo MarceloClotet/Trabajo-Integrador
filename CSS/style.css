@@ -192,6 +192,7 @@ header{
     display:grid;
     grid-template-columns: repeat(2 , 1fr);
     align-items: center;
+    padding: var(--spacing-16) 0;
 }
 .collection:nth-child(2) .collection__cover{
     order: -1; /* con esto cambianmos el orden de las cajas contenedoras*/
@@ -235,6 +236,7 @@ header{
     display: flex;
     flex-direction: column;
     gap:var(--spacing-36);
+    margin: var(--spacing-68) auto;
 }
 .slider__title{
     font-family: var(--alternative-font);
@@ -293,6 +295,18 @@ header{
     font-weight: 700;
 }
 
+/*--Footer--*/
+.footer{
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-68);
+}
+.footer__copy{
+    margin-top: var(--spacing-36);
+    text-align: center;
+}
+
+
+/*--Animation--*/
 @keyframes fade{
     0%{
         opacity: 0;
